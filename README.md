@@ -47,7 +47,9 @@ docker run -p 8000:8000 \
   --env-file .env \
   -v $(pwd)/data:/app/data \
   aion-rag-service \
-  --model gpt-4.1-mini
+  --model gpt-4.1-mini \
+  --chunk_size 300 \
+  --chunk_overlap 50
 ```
 
 Optional CLI arguments:
