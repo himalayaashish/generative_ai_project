@@ -72,7 +72,7 @@ async def handle_query(user_id: str, user_input: str):
     try:
         vectorstore = gpt.get_vectorstore()
         # Search k=3 results as used in Notebook 04
-        chain = gpt.create_chat_chain(vectorstore.as_retriever(search_kwargs={"k": 3}))
+        chain = gpt.create_chat_chain(vectorstore.as_retriever(search_kwargs={"k": 6}))
 
         # Invoke the chain
         result = chain.invoke({"question": user_input})
