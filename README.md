@@ -70,7 +70,7 @@ curl -X POST http://localhost:8000/upload-pdfs \
 
 ### Ask a Question
 ```bash
-curl -X POST "http://localhost:8000/query?user_id=alice&user_input=What+are+the+main+safety+risks?"
+curl -X POST "http://localhost:8000/query?user_id=alice&user_input=tell+me+the+name+of+candidate+and+how+many+years+of+experience+he+has?"
 ```
 
 ### Sample Output
