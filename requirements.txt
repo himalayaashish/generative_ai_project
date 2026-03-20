@@ -1,0 +1,28 @@
+# --- Core Framework ---
+fastapi==0.110.0
+uvicorn==0.27.1
+pydantic==2.6.3
+python-dotenv==1.0.1
+pyyaml==6.0.1
+python-multipart
+
+# --- LangChain Ecosystem ---
+langchain==0.1.12
+langchain-openai==0.0.8
+langchain-community==0.0.28
+langchain-huggingface==0.0.3
+
+# --- Document Processing & Vector Stores ---
+pypdf==4.1.0
+chromadb==0.4.24
+tiktoken==0.6.0
+
+# --- Monitoring & Dashboard ---
+streamlit==1.32.0
+plotly==5.19.0
+pandas==2.2.1
+requests==2.31.0
+
+# --- Utilities ---
+beautifulsoup4==4.12.3
+sentence-transformers

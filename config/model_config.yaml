@@ -1,0 +1,26 @@
+project:
+  name: "Aion Industrial RAG"
+  version: "1.0.0"
+
+llm:
+  provider: "openai"
+  model_name: "gpt-4o"
+  temperature: 0.1
+  max_tokens: 1000
+
+vector_store:
+  provider: "chroma"
+  persist_directory: "./data/embeddings/"
+  collection_name: "industrial_safety_docs"
+
+processing:
+  chunk_size: 1000
+  chunk_overlap: 150
+  # FIX: Corrected embeddings_model to match the actual model used in
+  # gpt_client.py (HuggingFace local model, not OpenAI text-embedding-3-small)
+  embeddings_model: "sentence-transformers/all-MiniLM-L6-v2"
+
+retrieval:
+  search_type: "mmr"  # As used in Notebook 04 for diversity
+  k: 4
+  fetch_k: 20
